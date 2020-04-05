@@ -39,7 +39,13 @@ The rug plot was not kept in the final images, it the lack of differentialtion b
 The number of bins selected for the histogram outputs was 7 this was determined by capturing images across a number of bins number selections (pwb 1,5,7,10,50,100).png images are available for viewing along with the seaborn default pwbss.txt.The selection of 7 was appeared close to the default setting but it was felt it made the images slightly more appealing. Ultimately it was a decision of asthletic rather than clarity of output.
 A height of 8 for the images was selected, this was simply to allow for the graphs produced to be clearly visable and hence easier to work on and see changes made when preparing the data for presentation.
 
-This final output of this work is contained in testing6.py adapted from testing 3
+Image 1. Histogram and KDE of Petal Length : x Axis changed (0.0 min , 8.0 max) y axis (0.0 min , 4.5 max) top border changed to 0.9
+Image 2. Histogram and KDE of Petal Width : x Axis changed (0.0 min , 3.0 max) y axis (0.0 min , 8.0 max) top border changed to 0.9
+Image 3. Histogram and KDE of Sepal length : x Axis changed (3.5 min , 9.0 max) y axis (0.0 min , 1.6 max) top border changed to 0.9
+Image 4. Histogram and KDE of Sepal Width : x Axis changed (1.5 min , 5.0 max) y axis (0.0 min , 1.8 max) top border changed to 0.9
+Image 5. Scatterplot. No changes we made to format this document.
+
+This final output of this work is contained in testing6.py adapted from testing 3 and images oulined above.
 
 Next steps are to continue working on summary stats.
 
@@ -54,4 +60,5 @@ Petal definition (https://en.wikipedia.org/wiki/Petal)
 facetgrid info (https://seaborn.pydata.org/generated/seaborn.FacetGrid.html)
 pairplot info (https://seaborn.pydata.org/generated/seaborn.pairplot.html?highlight=pairplot#seaborn.pairplot)
 scipy package (https://docs.scipy.org/doc/scipy/reference/stats.html)
+KDE definition (https://en.wikipedia.org/wiki/Kernel_density_estimation)
 
