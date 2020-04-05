@@ -61,4 +61,4 @@ facetgrid info (https://seaborn.pydata.org/generated/seaborn.FacetGrid.html)
 pairplot info (https://seaborn.pydata.org/generated/seaborn.pairplot.html?highlight=pairplot#seaborn.pairplot)
 scipy package (https://docs.scipy.org/doc/scipy/reference/stats.html)
 KDE definition (https://en.wikipedia.org/wiki/Kernel_density_estimation)
-
+Scatter plot (https://web.microsoftstream.com/video/025ef713-d7c8-492f-97f4-5590015da029) Lecture 1 of scripting and programming module
