@@ -17,7 +17,7 @@ PETALS are like sepals modified leaves they are the single unit of what is colle
 
 IRIS FLOWER DATA SET was intoruduced by British Biologist Ronald Fisher, although the actual data was collected by Edgar Anderson (American). The data set consistes of 50 samples of 3 Iris types Iris setosa, Iris virginica and Iris versicolor. Wach was measured for petal length and width and sepal length and width. The data set setected for use in the following analysis was obtained from UCI and is accessed as a csv file for this exercise.
 
-KDE (Kernal density estimate)
+KDE (Kernal density estimatimation) Uses a probability estimate in place of a given discrete point, these estimates are then treated additively to produce a smoother curve for a better estimation of the population.
 
 RUG PLOT
 
@@ -48,6 +48,9 @@ Image 5. Scatterplot. No changes we made to format this document.
 This final output of this work is contained in testing6.py adapted from testing 3 and images oulined above.
 
 Next steps are to continue working on summary stats.
+
+## 06/04/20 
+testing7 loaded up giving the intiital summary stats, further work ongoing to add in more summary stats.
 
 # Appendix 1 information sources
 Wikipedia (https://en.wikipedia.org/wiki/Iris_flower_data_set)
