@@ -74,4 +74,5 @@ pairplot info (https://seaborn.pydata.org/generated/seaborn.pairplot.html?highli
 scipy package (https://docs.scipy.org/doc/scipy/reference/stats.html)
 KDE definition (https://en.wikipedia.org/wiki/Kernel_density_estimation)
 Scatter plot (https://web.microsoftstream.com/video/025ef713-d7c8-492f-97f4-5590015da029) Lecture 1 of scripting and programming module
-writing to a text file from pyton (https://www.geeksforgeeks.org/reading-writing-text-files-python/)
+writing to a text file from python (https://www.geeksforgeeks.org/reading-writing-text-files-python/)
+writing to a text file from python (https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file)
