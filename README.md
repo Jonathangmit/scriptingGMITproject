@@ -56,7 +56,11 @@ This final output of this work is contained in testing6.py adapted from testing 
 Next steps are to continue working on summary stats.
 
 ## 06/04/20 
-testing7 loaded up giving the intiital summary stats, further work ongoing to add in more summary stats.
+testing7 loaded up giving the intital summary stats, further work ongoing to add in more summary stats.
+
+## 07/04/20 -11/04/20
+testing9 contains stats output and creates and populates the text file.
+testing11 separates the different class of iris flowers and provides descriptive data of the individual sets.
 
 # 4. Project analysis and discussion
 
@@ -76,3 +80,4 @@ KDE definition (https://en.wikipedia.org/wiki/Kernel_density_estimation)
 Scatter plot (https://web.microsoftstream.com/video/025ef713-d7c8-492f-97f4-5590015da029) Lecture 1 of scripting and programming module
 writing to a text file from python (https://www.geeksforgeeks.org/reading-writing-text-files-python/)
 writing to a text file from python (https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file)
+writing to a text file from python (https://www.python-course.eu/sys_module.php)
