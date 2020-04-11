@@ -3,27 +3,33 @@
 Project for GMIT programming and scripting
 All references will be placed at the in the Appendix.
 
-# Project plan
+# Contents
+1. Project plan - Basic outline for the plan
+2. Definitions - Explains some of the terms used.
+3. Programming diary - High level diary of programming activtys and some decisions.
+4. Analysis and discussion of primary project (Scatter, histograms, descriptive stats)
+
+# 1.Project plan
 * Other coursework (including computer arcitecture to be completed also + moodle exam)
 Wks 1-2 (18/03/20 - 01/04/20) reseaching and selecting the data set.  Working on the set to produce workable data for manipulation.*
 Week 3- 4 (02/04/20 - 15/04/20) 'Playing with the data' understanding how to produce outputs to other docs *
 Week 5 (16/04/20 - 22/04/20) Complete analysis.py
 Week 6 (22/04/20 - 29/04/20) Additional extra's if permittted.
 
-# Definitions
+# 2.Definitions Used
 SEPAL is the single unit of the  protective layer around the bud of the flower which they collectively form the layer known as the calyx. They are typically green in colour. The primary function as stated is to protect the flower ,although it can in many cases also offer support to the budded flower. In additon the SEPAL can form a defence for the budded flowers seeds although many will simply wither or become non functioning to the plant.
 
 PETALS are like sepals modified leaves they are the single unit of what is collectivly known as the Corolla, trypically more attractive and brightly coloured in order to attract pollinators to the reproductive area of the plant. 
 
 IRIS FLOWER DATA SET was intoruduced by British Biologist Ronald Fisher, although the actual data was collected by Edgar Anderson (American). The data set consistes of 50 samples of 3 Iris types Iris setosa, Iris virginica and Iris versicolor. Wach was measured for petal length and width and sepal length and width. The data set setected for use in the following analysis was obtained from UCI and is accessed as a csv file for this exercise.
 
-KDE (Kernal density estimate)
+KDE (Kernal density estimatimation) Uses a probability estimate in place of a given discrete point, these estimates are then treated additively to produce a smoother curve for a better estimation of the population.
 
-RUG PLOT
+RUG PLOT is a plot of zero bin width used to display distribution.
 
 BINS is the number of discreate locations that a data set can be placed into the higher the number of bins the greater defintion the histogram can obtain although the useful number of bins is constrained by the defintion within the data set. eg there is no point offer a bin size that would alllow for 0.001cm differences to be obtained when the data set only has a definition of 0.1cm.
 
-# Programming Diary
+# 3.Programming Diary
 
 ## 01/04/20 
 Got data from CSV file into python and produced it with correct column headings for the variables. Also produced separate histograms with KDE plots. 
@@ -49,6 +55,16 @@ This final output of this work is contained in testing6.py adapted from testing 
 
 Next steps are to continue working on summary stats.
 
+## 06/04/20 
+testing7 loaded up giving the intital summary stats, further work ongoing to add in more summary stats.
+
+## 07/04/20 -11/04/20
+testing9 contains stats output and creates and populates the text file.
+testing11 separates the different class of iris flowers and provides descriptive data of the individual sets.
+
+# 4. Project analysis and discussion
+
+
 # Appendix 1 information sources
 Wikipedia (https://en.wikipedia.org/wiki/Iris_flower_data_set)
 medium.com(https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d)
@@ -62,3 +78,9 @@ pairplot info (https://seaborn.pydata.org/generated/seaborn.pairplot.html?highli
 scipy package (https://docs.scipy.org/doc/scipy/reference/stats.html)
 KDE definition (https://en.wikipedia.org/wiki/Kernel_density_estimation)
 Scatter plot (https://web.microsoftstream.com/video/025ef713-d7c8-492f-97f4-5590015da029) Lecture 1 of scripting and programming module
+writing to a text file from python (https://www.geeksforgeeks.org/reading-writing-text-files-python/)
+writing to a text file from python (https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file)
+writing to a text file from python (https://www.python-course.eu/sys_module.php)
+splitting data into groups based on class (https://datacarpentry.org/python-ecology-lesson/03-index-slice-subset/)
+spliiting data frame based on column value (https://stackoverflow.com/questions/36192633/python-pandas-split-a-data-frame-based-on-a-column-value)
+Printing an empty line (https://stackoverflow.com/questions/13872049/print-empty-line/22534622)
