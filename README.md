@@ -82,3 +82,5 @@ writing to a text file from python (https://www.geeksforgeeks.org/reading-writin
 writing to a text file from python (https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file)
 writing to a text file from python (https://www.python-course.eu/sys_module.php)
 splitting data into groups based on class (https://datacarpentry.org/python-ecology-lesson/03-index-slice-subset/)
+spliiting data frame based on column value (https://stackoverflow.com/questions/36192633/python-pandas-split-a-data-frame-based-on-a-column-value)
+
