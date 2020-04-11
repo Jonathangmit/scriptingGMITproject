@@ -81,3 +81,4 @@ Scatter plot (https://web.microsoftstream.com/video/025ef713-d7c8-492f-97f4-5590
 writing to a text file from python (https://www.geeksforgeeks.org/reading-writing-text-files-python/)
 writing to a text file from python (https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file)
 writing to a text file from python (https://www.python-course.eu/sys_module.php)
+splitting data into groups based on class (https://datacarpentry.org/python-ecology-lesson/03-index-slice-subset/)
