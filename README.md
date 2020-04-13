@@ -91,4 +91,7 @@ spliiting data frame based on column value (https://stackoverflow.com/questions/
 Printing an empty line (https://stackoverflow.com/questions/13872049/print-empty-line/22534622)
 getting the modular value for numerical outputs (https://learnandlearn.com/python-programming/python-reference/python-abs-function)
 subset data frames (https://www.python-course.eu/index.php)
+ttest (https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_ind.html)
 t-Statistic (https://en.wikipedia.org/wiki/T-statistic)
+statistical functions (https://www.tutorialspoint.com/statistical-functions-in-python)
+Dividing two lists (https://www.geeksforgeeks.org/python-dividing-two-lists/)
