@@ -62,7 +62,12 @@ testing7 loaded up giving the intital summary stats, further work ongoing to add
 testing9 contains stats output and creates and populates the text file.
 testing11 separates the different class of iris flowers and provides descriptive data of the individual sets.
 
-# 4. Project analysis and discussion
+## 11/04/20 -13/04/20
+analysisconstruct.py loaded, this provides an executable script that produces the graphical images required and the text file output. This is to be worked on further before creating final analysis.py.
+Descriptive stats are subtracted to give differences between species, t test performed on the 4 measurements between iris vericolour and iris virningica to determine if difference can be spotted.
+Next seps to tie all in for analysis py and then continue investigation into further analysis conducted by others.
+
+# 4. Main project analysis and discussion
 
 
 # Appendix 1 information sources
@@ -86,3 +91,4 @@ spliiting data frame based on column value (https://stackoverflow.com/questions/
 Printing an empty line (https://stackoverflow.com/questions/13872049/print-empty-line/22534622)
 getting the modular value for numerical outputs (https://learnandlearn.com/python-programming/python-reference/python-abs-function)
 subset data frames (https://www.python-course.eu/index.php)
+t-Statistic (https://en.wikipedia.org/wiki/T-statistic)
