@@ -106,6 +106,20 @@ A comparison of the mean values again shows that the setosa when compared to the
 
 The scatter plots for the sepal width v sepal length show that there is still clear dicernment between Setosa and the other species.
 
+## 4.1.3 Z-test
+The data set allows us to run a Z-Test, this test was selected because our data set met the following criteria.
+
+  1.our sample size is greater than 30.
+  2.Data points should be independent from each other.
+  3.Your data should be normally distributed. However, for large sample sizes (over 30) this doesn’t always matter.
+  4.Your data should be randomly selected from a population, where each item has an equal chance of being selected.
+  5.Sample sizes should be equal if at all possible.
+  
+With the Iris setosa data set clearly displaying the above attributes the analysis was run and the calculated values and output are available in section 7 of xxxx.txt. The Z test was unable to separate the any of the attributes between the two data sets.
+
+## 4.1.4 T-test
+
+
 ## 4.5 Conclusion
 Based on the data and the current analysis perfomed the following conclusions can be made.
   1. It is possible to discern the difference between Iris setosa and the other species using this data set.
@@ -137,4 +151,4 @@ ttest (https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_in
 t-Statistic (https://en.wikipedia.org/wiki/T-statistic)
 statistical functions (https://www.tutorialspoint.com/statistical-functions-in-python)
 Dividing two lists (https://www.geeksforgeeks.org/python-dividing-two-lists/)
-Independant T-test (https://towardsdatascience.com/hypothesis-testing-in-machine-learning-using-python-a0dc89e169ce)
+Z-test (https://towardsdatascience.com/hypothesis-testing-in-machine-learning-using-python-a0dc89e169ce)
