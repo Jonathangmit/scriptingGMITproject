@@ -1,5 +1,4 @@
 # scriptingGMITproject
-## Markdown cheat sheet used (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 Project for GMIT programming and scripting
 All references will be placed at the in the Appendix.
 
@@ -62,10 +61,75 @@ testing7 loaded up giving the intital summary stats, further work ongoing to add
 testing9 contains stats output and creates and populates the text file.
 testing11 separates the different class of iris flowers and provides descriptive data of the individual sets.
 
-# 4. Project analysis and discussion
+## 11/04/20 -13/04/20
+analysisconstruct.py loaded, this provides an executable script that produces the graphical images required and the text file output. This is to be worked on further before creating final analysis.py.
+Descriptive stats are subtracted to give differences between species, t test performed on the 4 measurements between iris vericolour and iris virningica to determine if difference can be spotted.
+Next steps to tie all in for analysis py and then continue investigation into further analysis conducted by others.
 
+## 15/04/20
+Investigation and programming of Z and T tests into ananlysiscontruct3.py
+
+# 4. Main project analysis and discussion
+
+## 4.1 Introduction and Background
+Fisher's Iris data set is a data set that captures the status of four different aspects of 3 separate sub-spiecies of Iris plant. The four separate aspects are Sepal Length, Sepal Width, Petal Length and Petal Width. The three species are Iris Setosa (IS) , Iris Vericolour (IV) and Iris Virginica (IVi).
+
+The data was manipulated using a program constucted (analysis.py) in the python programming language.
+
+## 4.2 Outputs
+Outputs created by the program (anaysis.py) and thus used in the review are as follows
+
+1. A text file containinig the data sets separated by sub species with descriptive statistics for each sub species. The file also contains comparisons between the descriptive statistics of each sub species. (xxxxx.txt)
+2. 4 x histograms with KDE overlays for each aspect/species combination . (1.Petal Length (PL), 2.Petal Width (PW), 3.Sepal Length(SL), 4. Sepal Width(SW))
+3. A set of scatterplots placing the 4 aspects agaist each other in individual plots. (5.scatter plot)
+
+## 4.3 Results
+Detailed results are contained in the output files contined in the github repositry for this project.
+
+## 4.4 Discussion
+
+### 4.1.1 Petals
+From the 2 petal histograms it's clear visually that the Iris setosa genus differs in it's petal distibution in comparison to the versicolour and virginica variety's. Both plots  demonstate no crossover between the setosa distribution and other distributions and it is clear that separtion of the setosa varity based on petal measurements alone would be possible.
+
+Iris vericolour and Virginica do not separate clearly on petal distributions, although versicolour in both instances has the central value of it's distribution lower than virginica there is a great deal of cross over that would prevent identification of genus based on the obtained values.
+
+In output.txt section 6.1.1 we can see the difference in petal length mean values between Setosa and Versicolour is 2.8cm and a value of 1.1cm is obtained for the difference in mean values for the petal width.
+Section 6.1.2 gives a difference in mean values between Setosa and Virginica as 4.1cm and 1.8cm for petal length and width respectivly.
+When we look at the values in 6.1.3 for Virginica and Versicolour the values are 1.3cm and 0.7cm for petal length and width respectivly.This bears out the observation of the histograms that Iris Virginica and Versicolour are much closed in the measured petal characteristics than  when compared wth Iris Setosa.
+
+An intersting aspect of the data that can be seen in the histograms is that the distribution of the petal length and width for Iris setosa seems although approaching a normal distribution shape seem slightly distorted. The 25th and 50th centile results for Setosa (section 3.1) are extramly cose in value (0.1cm difference for petal length and 0cm for petal width). This confirms the inference of the visual data that at the time of sampling a normal distribution that we would expect to see was not attained. This lack of change between the 25th and 50th centile is not apparant in either Versicolour or Virginica data for petal length or width.
+
+The scatter plots give us a good visual, when we look at the data sets with petal width or length plotted against the other variables there is a clear demarkation between setosa and the other species. This adds to the confidence that with just this data set avaialble differation between setosa and the other species is possible. The setosa petal is discernably smaller. The plots distributions for the individual aspects also again show the the petal that the petal data data does not conform to as smooth a distribution for the setosa as the other species.
+
+### 4.1.2 Sepals
+From the 2 Sepal histograms there is not the same level of clarity avaialable to separate the differing genus with all distribution overlaying. Of note here though is the normal distribution of the Iris setosa, the histogram is a lot smoother and the KDE plot unlike the petal charts is much more characteristic of a normal data distribution.
+
+A comparison of the mean values again shows that the setosa when compared to the others has the greatest difference in mean values (see sections 6.1.1, 6.1.2 & 6.1.3 of xxxx.txt).
+
+The scatter plots for the sepal width v sepal length show that there is still clear dicernment between Setosa and the other species.
+
+## 4.1.3 Z-test
+The data set allows us to run a Z-Test, this test was selected because our data set met the following criteria.
+
+  1.our sample size is greater than 30.
+  2.Data points should be independent from each other.
+  3.Your data should be normally distributed. However, for large sample sizes (over 30) this doesn’t always matter.
+  4.Your data should be randomly selected from a population, where each item has an equal chance of being selected.
+  5.Sample sizes should be equal if at all possible.
+  
+With the Iris setosa data set clearly displaying the above attributes the analysis was run and the calculated values and output are available in section 7 of xxxx.txt. The Z test was unable to separate the any of the attributes between the two data sets.
+
+## 4.1.4 T-test
+
+
+## 4.5 Conclusion
+Based on the data and the current analysis perfomed the following conclusions can be made.
+  1. It is possible to discern the difference between Iris setosa and the other species using this data set.
+  2. It is not possible to discern the difference between Iris Versicolour and Iris Virginica using this data set.
+  3. The Iris Setosa may not have been measured at the same point in it's growth cycle as the other two species based on its poor   conformance to a normal curve for it's petal length and in particular it's petal width. It's population skew toward the lower end of the range observed for petal width could potentially be an indication that these measurements were taken when the Setosa flower was still immature. 
 
 # Appendix 1 information sources
+Markdown cheat sheet used (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 Wikipedia (https://en.wikipedia.org/wiki/Iris_flower_data_set)
 medium.com(https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d)
 UCI (https://archive.ics.uci.edu/ml/datasets/iris)
@@ -86,3 +150,8 @@ spliiting data frame based on column value (https://stackoverflow.com/questions/
 Printing an empty line (https://stackoverflow.com/questions/13872049/print-empty-line/22534622)
 getting the modular value for numerical outputs (https://learnandlearn.com/python-programming/python-reference/python-abs-function)
 subset data frames (https://www.python-course.eu/index.php)
+ttest (https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_ind.html)
+t-Statistic (https://en.wikipedia.org/wiki/T-statistic)
+statistical functions (https://www.tutorialspoint.com/statistical-functions-in-python)
+Dividing two lists (https://www.geeksforgeeks.org/python-dividing-two-lists/)
+Z-test (https://towardsdatascience.com/hypothesis-testing-in-machine-learning-using-python-a0dc89e169ce)
