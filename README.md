@@ -137,3 +137,4 @@ ttest (https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_in
 t-Statistic (https://en.wikipedia.org/wiki/T-statistic)
 statistical functions (https://www.tutorialspoint.com/statistical-functions-in-python)
 Dividing two lists (https://www.geeksforgeeks.org/python-dividing-two-lists/)
+Independant T-test (https://towardsdatascience.com/hypothesis-testing-in-machine-learning-using-python-a0dc89e169ce)
