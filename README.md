@@ -1,5 +1,4 @@
 # scriptingGMITproject
-## Markdown cheat sheet used (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 Project for GMIT programming and scripting
 All references will be placed at the in the Appendix.
 
@@ -65,7 +64,10 @@ testing11 separates the different class of iris flowers and provides descriptive
 ## 11/04/20 -13/04/20
 analysisconstruct.py loaded, this provides an executable script that produces the graphical images required and the text file output. This is to be worked on further before creating final analysis.py.
 Descriptive stats are subtracted to give differences between species, t test performed on the 4 measurements between iris vericolour and iris virningica to determine if difference can be spotted.
-Next seps to tie all in for analysis py and then continue investigation into further analysis conducted by others.
+Next steps to tie all in for analysis py and then continue investigation into further analysis conducted by others.
+
+## 15/04/20
+Investigation and programming of Z and T tests into ananlysiscontruct3.py
 
 # 4. Main project analysis and discussion
 
@@ -127,6 +129,7 @@ Based on the data and the current analysis perfomed the following conclusions ca
   3. The Iris Setosa may not have been measured at the same point in it's growth cycle as the other two species based on its poor   conformance to a normal curve for it's petal length and in particular it's petal width. It's population skew toward the lower end of the range observed for petal width could potentially be an indication that these measurements were taken when the Setosa flower was still immature. 
 
 # Appendix 1 information sources
+Markdown cheat sheet used (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 Wikipedia (https://en.wikipedia.org/wiki/Iris_flower_data_set)
 medium.com(https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d)
 UCI (https://archive.ics.uci.edu/ml/datasets/iris)
