@@ -4,6 +4,7 @@ import seaborn as sns
 import pandas as pd
 from scipy import stats
 import sys
+from statsmodels.stats import weightstats as stests
 # Creating colums reading in the CSV file
 col=['sepal_length','sepal_width','petal_length','petal_width','class']
 iris=pd.read_csv("iris.csv",names=col)
@@ -89,7 +90,39 @@ print (abs (y-z))
 print('\n')
 # Conducting independant T-test on Iris versicolour and Iris virginica aspects
 print ('\n')
-print ("SECTION 7 INDEPENDANT T-TEST FOR ASSOTIATION OF THE SAME ATTRIBUTE (IRIS VERSICOLOUR AND IRIS VIRGINICA ONLY) ")
+print ("SECTION 7 INDEPENDANT Z-TEST FOR ASSOTIATION OF THE SAME ATTRIBUTE (IRIS VERSICOLOUR AND IRIS VIRGINICA ONLY) ")
+print("CRITERIA p > 0.01 for acceptance of assotiation")
+print('\n')
+ztest,anssl = stests.ztest(df2sl,x2=df3sl,value=0,alternative='two-sided')
+print ("The Z-test value for comparison of sepal lengths is", anssl)
+if anssl < 0.01:
+    print ("The hypothesis is rejected identification can not be determined via this attribute")
+else:
+    print ("The hypothesis is accepted identification can be determined via this attribute")
+print (" ")
+ztest,anssw = stests.ztest(df2sw,x2=df3sw,value=0,alternative='two-sided')
+print ("The Z-test value for comparison of sepal widths is" , anssw)
+if anssw < 0.01:
+    print ("The hypothesis is rejected identification can not be determined via this attribute")
+else:
+    print ("The hypothesis is accepted identification can be determined via this attribute")
+print (" ")
+ztest,anspw = stests.ztest(df2pw,x2=df3pw,value=0,alternative='two-sided')
+print ("The Z-test value for comparison of petal widths is", anspw)
+if anspw < 0.01:
+    print ("The hypothesis is rejected identification can not be determined via this attribute")
+else:
+    print ("The hypothesis is accepted identification can be determined via this attribute")
+print (" ")
+ztest,anspl = stests.ztest(df2pl,x2=df3pl,value=0,alternative='two-sided')
+print ("The Z-test value for comparison of petal lengths is", anspl)
+if anspl < 0.01:
+    print ("The hypothesis is rejected identification can not be determined via this attribute")
+else:
+    print ("The hypothesis is accepted identification can be determined via this attribute")
+print ('\n')
+print ('\n')
+print ("SECTION 8 INDEPENDANT T-TEST FOR ASSOTIATION OF THE SAME ATTRIBUTE (IRIS VERSICOLOUR AND IRIS VIRGINICA ONLY) ")
 print("CRITERIA p > 0.01 for acceptance of assotiation")
 ttest,anssl = stats.ttest_ind(df2sl,df3sl)
 print ("The T-test p value for comparison of sepal lengths is", anssl)
