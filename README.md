@@ -93,14 +93,24 @@ Iris vericolour and Virginica do not separate clearly on petal distributions, al
 
 In output.txt section 6.1.1 we can see the difference in petal length mean values between Setosa and Versicolour is 2.8cm and a value of 1.1cm is obtained for the difference in mean values for the petal width.
 Section 6.1.2 gives a difference in mean values between Setosa and Virginica as 4.1cm and 1.8cm for petal length and width respectivly.
-When we look at the values in 6.1.3 for Virginica and Versicolour the values are 1.3cm and 0.7cm for petal length and width respectivly.
+When we look at the values in 6.1.3 for Virginica and Versicolour the values are 1.3cm and 0.7cm for petal length and width respectivly.This bears out the observation of the histograms that Iris Virginica and Versicolour are much closed in the measured petal characteristics than  when compared wth Iris Setosa.
 
 An intersting aspect of the data that can be seen in the histograms is that the distribution of the petal length and width for Iris setosa seems although approaching a normal distribution shape seem slightly distorted. The 25th and 50th centile results for Setosa (section 3.1) are extramly cose in value (0.1cm difference for petal length and 0cm for petal width). This confirms the inference of the visual data that at the time of sampling a normal distribution that we would expect to see was not attained. This lack of change between the 25th and 50th centile is not apparant in either Versicolour or Virginica data for petal length or width.
+
+The scatter plots give us a good visual, when we look at the data sets with petal width or length plotted against the other variables there is a clear demarkation between setosa and the other species. This adds to the confidence that with just this data set avaialble differation between setosa and the other species is possible. The setosa petal is discernably smaller. The plots distributions for the individual aspects also again show the the petal that the petal data data does not conform to as smooth a distribution for the setosa as the other species.
 
 ### 4.1.2 Sepals
 From the 2 Sepal histograms there is not the same level of clarity avaialable to separate the differing genus with all distribution overlaying. Of note here though is the normal distribution of the Iris setosa, the histogram is a lot smoother and the KDE plot unlike the petal charts is much more characteristic of a normal data distribution.
 
+A comparison of the mean values again shows that the setosa when compared to the others has the greatest difference in mean values (see sections 6.1.1, 6.1.2 & 6.1.3 of xxxx.txt).
+
+The scatter plots for the sepal width v sepal length show that there is still clear dicernment between Setosa and the other species.
+
 ## 4.5 Conclusion
+Based on the data and the current analysis perfomed the following conclusions can be made.
+  1. It is possible to discern the difference between Iris setosa and the other species using this data set.
+  2. It is not possible to discern the difference between Iris Versicolour and Iris Virginica using this data set.
+  3. The Iris Setosa may not have been measured at the same point in it's growth cycle as the other two species based on its poor   conformance to a normal curve for it's petal length and in particular it's petal width. It's population skew toward the lower end of the range observed for petal width could potentially be an indication that these measurements were taken when the Setosa flower was still immature. 
 
 # Appendix 1 information sources
 Wikipedia (https://en.wikipedia.org/wiki/Iris_flower_data_set)
