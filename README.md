@@ -69,6 +69,38 @@ Next seps to tie all in for analysis py and then continue investigation into fur
 
 # 4. Main project analysis and discussion
 
+## 4.1 Introduction and Background
+Fisher's Iris data set is a data set that captures the status of four different aspects of 3 separate sub-spiecies of Iris plant. The four separate aspects are Sepal Length, Sepal Width, Petal Length and Petal Width. The three species are Iris Setosa (IS) , Iris Vericolour (IV) and Iris Virginica (IVi).
+
+The data was manipulated using a program constucted (analysis.py) in the python programming language.
+
+## 4.2 Outputs
+Outputs created by the program (anaysis.py) and thus used in the review are as follows
+
+1. A text file containinig the data sets separated by sub species with descriptive statistics for each sub species. The file also contains comparisons between the descriptive statistics of each sub species. (xxxxx.txt)
+2. 4 x histograms with KDE overlays for each aspect/species combination . (1.Petal Length (PL), 2.Petal Width (PW), 3.Sepal Length(SL), 4. Sepal Width(SW))
+3. A set of scatterplots placing the 4 aspects agaist each other in individual plots. (5.scatter plot)
+
+## 4.3 Results
+Detailed results are contained in the output files contined in the github repositry for this project.
+
+## 4.4 Discussion
+
+### 4.1.1 Petals
+From the 2 petal histograms it's clear visually that the Iris setosa genus differs in it's petal distibution in comparison to the versicolour and virginica variety's. Both plots  demonstate no crossover between the setosa distribution and other distributions and it is clear that separtion of the setosa varity based on petal measurements alone would be possible.
+
+Iris vericolour and Virginica do not separate clearly on petal distributions, although versicolour in both instances has the central value of it's distribution lower than virginica there is a great deal of cross over that would prevent identification of genus based on the obtained values.
+
+In output.txt section 6.1.1 we can see the difference in petal length mean values between Setosa and Versicolour is 2.8cm and a value of 1.1cm is obtained for the difference in mean values for the petal width.
+Section 6.1.2 gives a difference in mean values between Setosa and Virginica as 4.1cm and 1.8cm for petal length and width respectivly.
+When we look at the values in 6.1.3 for Virginica and Versicolour the values are 1.3cm and 0.7cm for petal length and width respectivly.
+
+An intersting aspect of the data that can be seen in the histograms is that the distribution of the petal length and width for Iris setosa seems although approaching a normal distribution shape seem slightly distorted. The 25th and 50th centile results for Setosa (section 3.1) are extramly cose in value (0.1cm difference for petal length and 0cm for petal width). This confirms the inference of the visual data that at the time of sampling a normal distribution that we would expect to see was not attained. This lack of change between the 25th and 50th centile is not apparant in either Versicolour or Virginica data for petal length or width.
+
+### 4.1.2 Sepals
+From the 2 Sepal histograms there is not the same level of clarity avaialable to separate the differing genus with all distribution overlaying. Of note here though is the normal distribution of the Iris setosa, the histogram is a lot smoother and the KDE plot unlike the petal charts is much more characteristic of a normal data distribution.
+
+## 4.5 Conclusion
 
 # Appendix 1 information sources
 Wikipedia (https://en.wikipedia.org/wiki/Iris_flower_data_set)
