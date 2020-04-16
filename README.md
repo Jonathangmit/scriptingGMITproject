@@ -159,3 +159,4 @@ t-test information(https://svaditya.github.io/oldblog/chi_square_and_t_tests_on_
 Box plots (https://www.tutorialspoint.com/python_data_science/python_box_plots.htm)
 plot information (https://towardsdatascience.com/data-visualization-for-machine-learning-and-data-science-a45178970be7)
 confusion matrix (https://www.python-course.eu/confusion_matrix.php)
+machine learning (https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
