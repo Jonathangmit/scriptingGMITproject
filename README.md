@@ -69,6 +69,10 @@ Next steps to tie all in for analysis py and then continue investigation into fu
 ## 15/04/20
 Investigation and programming of Z and T tests into ananlysiscontruct3.py
 
+## 16/04/20
+T test selected and box plots added to produce analysiscontruct4.py
+
+
 # 4. Main project analysis and discussion
 
 ## 4.1 Introduction and Background
@@ -108,24 +112,19 @@ A comparison of the mean values again shows that the setosa when compared to the
 
 The scatter plots for the sepal width v sepal length show that there is still clear dicernment between Setosa and the other species.
 
-## 4.1.3 Z-test
-The data set allows us to run a Z-Test, this test was selected because our data set met the following criteria.
+## 4.1.3 T-test
+A T-test was conducted on the measured attributes of iris versicolour and iris virginica
 
-  1.our sample size is greater than 30.
-  2.Data points should be independent from each other.
-  3.Your data should be normally distributed. However, for large sample sizes (over 30) this doesn’t always matter.
-  4.Your data should be randomly selected from a population, where each item has an equal chance of being selected.
-  5.Sample sizes should be equal if at all possible.
-  
-With the Iris setosa data set clearly displaying the above attributes the analysis was run and the calculated values and output are available in section 7 of xxxx.txt. The Z test was unable to separate the any of the attributes between the two data sets.
+Null Hypothesis H0 : Measured attribute has no affect on Species. That is to say that the difference between the observed attribute values for various Species are not statistically different.
 
-## 4.1.4 T-test
+Alternate Hypothese Ha : Measured attribute has some affect on Species. That is to say that the difference between the observed attribute values for various Species are infact different from each other.
 
+The results in section 7 of xxxx.txt show that in each case with a p value set at 0.01 the null hypothesis is rejected from this we can infer that each attribute does signify a difference in species.
 
 ## 4.5 Conclusion
 Based on the data and the current analysis perfomed the following conclusions can be made.
   1. It is possible to discern the difference between Iris setosa and the other species using this data set.
-  2. It is not possible to discern the difference between Iris Versicolour and Iris Virginica using this data set.
+  2. It is not possible to discern the difference between Iris Versicolour and Iris Virginica fully using this data set. Although the t test tells us that there is a significant difference in attrubutes the utilised analysis techniques do not allow us to fully demonstrate this.
   3. The Iris Setosa may not have been measured at the same point in it's growth cycle as the other two species based on its poor   conformance to a normal curve for it's petal length and in particular it's petal width. It's population skew toward the lower end of the range observed for petal width could potentially be an indication that these measurements were taken when the Setosa flower was still immature. 
 
 # Appendix 1 information sources
@@ -154,4 +153,9 @@ ttest (https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_in
 t-Statistic (https://en.wikipedia.org/wiki/T-statistic)
 statistical functions (https://www.tutorialspoint.com/statistical-functions-in-python)
 Dividing two lists (https://www.geeksforgeeks.org/python-dividing-two-lists/)
-Z-test (https://towardsdatascience.com/hypothesis-testing-in-machine-learning-using-python-a0dc89e169ce)
+T- test & Z-test (https://towardsdatascience.com/hypothesis-testing-in-machine-learning-using-python-a0dc89e169ce)
+When to use T or Z (https://towardsdatascience.com/statistical-tests-when-to-use-which-704557554740)
+t-test information(https://svaditya.github.io/oldblog/chi_square_and_t_tests_on_iris_data.html)
+Box plots (https://www.tutorialspoint.com/python_data_science/python_box_plots.htm)
+plot information (https://towardsdatascience.com/data-visualization-for-machine-learning-and-data-science-a45178970be7)
+confusion matrix (https://www.python-course.eu/confusion_matrix.php)
