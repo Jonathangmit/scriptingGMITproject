@@ -157,3 +157,5 @@ T- test & Z-test (https://towardsdatascience.com/hypothesis-testing-in-machine-l
 When to use T or Z (https://towardsdatascience.com/statistical-tests-when-to-use-which-704557554740)
 t-test information(https://svaditya.github.io/oldblog/chi_square_and_t_tests_on_iris_data.html)
 Box plots (https://www.tutorialspoint.com/python_data_science/python_box_plots.htm)
+plot information (https://towardsdatascience.com/data-visualization-for-machine-learning-and-data-science-a45178970be7)
+confusion matrix (https://www.python-course.eu/confusion_matrix.php)
