@@ -72,6 +72,8 @@ Investigation and programming of Z and T tests into ananlysiscontruct3.py
 ## 16/04/20
 T test selected and box plots added to produce analysiscontruct4.py
 
+## 17/04/20 -19/04/20
+Investigation into Machine learning algorithms to manipulate the data. SVC (support vestor classifier) selected based on infomation (I found a site that gave a programe that delivered rated output for a number of machine learning add ins but given my newness to macine learning rather than employ the code from that step I chose to select the best rated add in and work to produce output with that. The best rated was SVC, after manual manipulation of parameters The following values were set to Kernel=linear, test and train size to default and C=1.5.
 
 # 4. Main project analysis and discussion
 
@@ -121,6 +123,8 @@ Alternate Hypothese Ha : Measured attribute has some affect on Species. That is 
 
 The results in section 7 of xxxx.txt show that in each case with a p value set at 0.01 the null hypothesis is rejected from this we can infer that each attribute does signify a difference in species.
 
+## SVC examination (Kernel = linear , C =1.5)
+
 ## 4.5 Conclusion
 Based on the data and the current analysis perfomed the following conclusions can be made.
   1. It is possible to discern the difference between Iris setosa and the other species using this data set.
@@ -160,3 +164,7 @@ Box plots (https://www.tutorialspoint.com/python_data_science/python_box_plots.h
 plot information (https://towardsdatascience.com/data-visualization-for-machine-learning-and-data-science-a45178970be7)
 confusion matrix (https://www.python-course.eu/confusion_matrix.php)
 machine learning (https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
+About SVC (https://pythonprogramming.net/linear-svc-example-scikit-learn-svm-python/)
+Plotting ML output (https://medium.com/swlh/visualizing-svm-with-python-4b4b238a7a92)
+SVM (https://www.svm-tutorial.com/2017/02/svms-overview-support-vector-machines/)
+SVM (https://www.svm-tutorial.com/2014/11/svm-understanding-math-part-1/)
