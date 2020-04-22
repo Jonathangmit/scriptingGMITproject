@@ -75,6 +75,9 @@ T test selected and box plots added to produce analysiscontruct4.py
 ## 17/04/20 -19/04/20
 Investigation into Machine learning algorithms to manipulate the data. SVC (support vestor classifier) selected based on infomation (I found a site that gave a programe that delivered rated output for a number of machine learning add ins but given my newness to macine learning rather than employ the code from that step I chose to select the best rated add in and work to produce output with that. The best rated was SVC, after manual manipulation of parameters The following values were set to Kernel=linear, test and train size to default and C=1.5.
 
+## 21/04/20 - 22/04/20
+Cleaning up code analysis 9 and 10 added.
+
 # 4. Main project analysis and discussion
 
 ## 4.1 Introduction and Background
