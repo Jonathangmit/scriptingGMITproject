@@ -93,12 +93,18 @@ Outputs created by the program (anaysis.py) and thus used in the review are as f
 3. A set of scatterplots placing the 4 aspects agaist each other in individual plots. (5.scatter plot)
 
 ## 4.3 Results
-Detailed results are contained in the output files contined in the github repositry for this project.
+Detailed results are contained in the output files contined in the github repositry for this project. As a minimum to be viewed
+  # analysis output.txt 
+  (this will be produced when analysis.py is executed, a copy (with different values from ML output) is in the github repositry as a file     under the name analysis output1.txt
+  # 0kde, petal length, petal width, sepal length, sepal width, scatterplot, iris setosa boxplot, iris versicolour boxplot, iris virginica boxplot
+  are .png files that give an enhanced (and saved) graphical output from analysis.py
+  
+ These outputs are discussed below.
 
 ## 4.4 Discussion
 
 ### 4.1.1 Petals
-From the 2 petal histograms it's clear visually that the Iris setosa genus differs in it's petal distibution in comparison to the versicolour and virginica variety's. Both plots  demonstate no crossover between the setosa distribution and other distributions and it is clear that separtion of the setosa varity based on petal measurements alone would be possible.
+From the 2 petal histograms it's clear that the Iris setosa genus differs in it's petal distibution in comparison to the versicolour and virginica variety's. Both plots  demonstate no crossover between the setosa distribution and other distributions and it is clear that separtion of the setosa varity based on petal measurements alone would be possible.
 
 Iris vericolour and Virginica do not separate clearly on petal distributions, although versicolour in both instances has the central value of it's distribution lower than virginica there is a great deal of cross over that would prevent identification of genus based on the obtained values.
 
@@ -113,20 +119,27 @@ The scatter plots give us a good visual, when we look at the data sets with peta
 ### 4.1.2 Sepals
 From the 2 Sepal histograms there is not the same level of clarity avaialable to separate the differing genus with all distribution overlaying. Of note here though is the normal distribution of the Iris setosa, the histogram is a lot smoother and the KDE plot unlike the petal charts is much more characteristic of a normal data distribution.
 
-A comparison of the mean values again shows that the setosa when compared to the others has the greatest difference in mean values (see sections 6.1.1, 6.1.2 & 6.1.3 of xxxx.txt).
+A comparison of the mean values again shows that the setosa when compared to the others has the greatest difference in mean values (see sections 6.1.1, 6.1.2 & 6.1.3 of analysis output.txt).
 
 The scatter plots for the sepal width v sepal length show that there is still clear dicernment between Setosa and the other species.
+## 4.1.3 Overall 
 
-## 4.1.3 T-test
+The box plots show that the Iris versicolour and Iris Virginica map similarly in that sepal and petal length  are longer than sepal and etal widths. Thsi is unlike Iris setosa where the sepal width is great than the petal length. This comparison of attributes alone would allow us to identify Iris setosa.
+
+The box plots also indicate (visually) that ratios of Iris versicolour and Iris Virginica attributes are very similar making separation on cominations of attributes difficult also. 
+
+The Iris setosa also shows a larger number of outliers on the petal length and width this agrees with observations made of the histograms. In particluar the petal width's 1st qualtile is also its median value.
+
+## 4.1.4 T-test
 A T-test was conducted on the measured attributes of iris versicolour and iris virginica
 
 Null Hypothesis H0 : Measured attribute has no affect on Species. That is to say that the difference between the observed attribute values for various Species are not statistically different.
 
 Alternate Hypothese Ha : Measured attribute has some affect on Species. That is to say that the difference between the observed attribute values for various Species are infact different from each other.
 
-The results in section 7 of xxxx.txt show that in each case with a p value set at 0.01 the null hypothesis is rejected from this we can infer that each attribute does signify a difference in species.
+The results in section 7 of analysis output.txt show that in each case with a p value set at 0.01 the null hypothesis is rejected from this we can infer that each attribute does signify a difference in species.
 
-## SVC examination (Kernel = linear , C =1.5)
+## 4.1.5 SVC examination (Kernel = linear , C =1.5)
 
 ## 4.5 Conclusion
 Based on the data and the current analysis perfomed the following conclusions can be made.
