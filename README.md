@@ -73,10 +73,19 @@ Investigation and programming of Z and T tests into ananlysiscontruct3.py
 T test selected and box plots added to produce analysiscontruct4.py
 
 ## 17/04/20 -19/04/20
-Investigation into Machine learning algorithms to manipulate the data. SVC (support vestor classifier) selected based on infomation (I found a site that gave a programe that delivered rated output for a number of machine learning add ins but given my newness to macine learning rather than employ the code from that step I chose to select the best rated add in and work to produce output with that. The best rated was SVC, after manual manipulation of parameters The following values were set to Kernel=linear, test and train size to default and C=1.5.
+Investigation into Machine learning algorithms to manipulate the data. SVC (support vestor classifier) selected based on infomation (I found a site that gave a programe that delivered rated output for a number of machine learning add ins but given my newness to machine learning rather than employ the code from that step I chose to select the best rated and in work to produce output with that. The best rated was SVC.
 
 ## 21/04/20 - 22/04/20
 Cleaning up code analysis 9 and 10 added.
+
+## 23/04/20
+SVC investigation SVC investrigation script was written to provide inforamation that would determine the number of samples used to train. The script runs the algorithm 100 times through a range of training sample sizes from 10 to 70. The 100 accuracy values determined from each set were then manipulated to provide information (mean, standard deviation & varience). This was then graphed and the from this output final values forthe training sample number were determined.
+
+This script was then changed to allow determination of the C value using the same methhod with the train sample value fixed at 60. The output was viewed and final C value was selected.
+
+Training sample = 60
+Test sample = 90
+C value = 1.5
 
 # 4. Main project analysis and discussion
 
@@ -146,26 +155,17 @@ Alternate Hypothese Ha : Measured attribute has some affect on Species. That is 
 
 The results in section 7 of analysis output.txt show that in each case with a p value set at 0.01 the null hypothesis is rejected from this we can infer that each attribute does signify a difference in species.
 
-## 4.1.5 SVC examination (Kernel = linear , C =1.5, default data sampling)
+## 4.1.6 SVC analysis to determine train / test size & C value
 
-The SVC examination yields a result in a range of accuracy 0.92 to 1.0 (average 0.96) when using the default training set of 25% of the data points.
+This demonstrates that the SVC algorithm is robust given its lack of change in accuracy over the increased number of test samples the implication is that the limits of it predictive capablility are met with a relativley low number training samples when used on this data set.
+
+## 4.1.7 SVC examination (Kernel = linear , C =1.5, train size = 60, test size = 90)
 
 The confusion matrix confirms that the SVC algorithm is capable of identifying Iris Setosa with 100% accuracy from the test set.
 
 The confusion matrix confirms that the SVC machine learning method still has an error potential when discerning between Iris Versicolour and Iris Virginica although some runs can yeild an accuracy of 1. Recall of both these class of flower can on some occasions be perfect (recall value of 1) but this is not consistant with the model recording non perfect recall values for both classes virginica and versicolour. 
 
 Precision values obtained from the matrix again show the SVC algorithm although correct most of the time is not perfect at predicting the classification of Virginica and Versicolour.
-
-  # 4.1.5.1 Investigation with 10 runs with default train/test settings
-0.9736, 1.0, 0.9210, 0.9210, 1.0, 0.9473, 1.0, 0.9736, 0.9473, 0.9473
-Average = 0.9632 to 4 d.p
-
-  # 4.1.5.2 Investigation with 10 runs changing train settings.
-Further investigation into the effect of increasing the training set size (hand calculated) showed little improvement in accuracy with accuracys for 25,50,75 & 100 value train sets giving (average) accuracy values of 0.962, 0.976, 0.97 and 0.974 respectivly. Thus we can conclude that increasing the training set in this algorithm at best yeilds an increase in accuracy less than 0.02. During this data aquisition the test set was held constant at 25 samples.
-
-This demonstrates that the SVC algorithm is robust given its lack of change in accuracy over the increased number of test samples the implication is that the limits of it predictive capablility are met with a relativley low number training samples when used on this data set.
-
-The recall score for Iris setosa was always 1 throughout the investigation, this confirms that the Iris setosa is fully classifiable based on the provided data set.
 
 ## 4.5 Conclusions
 Based on the data and the current analysis perfomed the following conclusions can be made.
