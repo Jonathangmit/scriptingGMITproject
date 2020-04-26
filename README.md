@@ -75,6 +75,9 @@ T test selected and box plots added to produce analysiscontruct4.py
 ## 17/04/20 -19/04/20
 Investigation into Machine learning algorithms to manipulate the data. SVC (support vestor classifier) selected based on infomation (I found a site that gave a programe that delivered rated output for a number of machine learning add ins but given my newness to macine learning rather than employ the code from that step I chose to select the best rated add in and work to produce output with that. The best rated was SVC, after manual manipulation of parameters The following values were set to Kernel=linear, test and train size to default and C=1.5.
 
+## 21/04/20 - 22/04/20
+Cleaning up code analysis 9 and 10 added.
+
 # 4. Main project analysis and discussion
 
 ## 4.1 Introduction and Background
@@ -90,12 +93,24 @@ Outputs created by the program (anaysis.py) and thus used in the review are as f
 3. A set of scatterplots placing the 4 aspects agaist each other in individual plots. (5.scatter plot)
 
 ## 4.3 Results
-Detailed results are contained in the output files contined in the github repositry for this project.
+Detailed results are contained in the output files contined in the github repositry for this project. As a minimum to be viewed
+  # analysis output.txt 
+  (this will be produced when analysis.py is executed, a copy (with different values from ML output) is in the github repositry as a file     under the name analysis output1.txt
+  # 0kde, petal length, petal width, sepal length, sepal width, scatterplot, iris setosa boxplot, iris versicolour boxplot, iris virginica boxplot
+  are .png files that give an enhanced (and saved) graphical output from analysis.py
+  # accuracy prediction average
+  gives the outuput of 10 executions of the machine learning componant of the programe.
+  # Analysis output perfect
+  gives an example of when the machine learning output gave perfect accuracy on the test sample provided by the script.
+  # Analysis output acc
+  gives an output of executed program with the predicted accuracy close to the calculated average, this will be the results used for the discussion section
+  
+ These outputs are discussed below.
 
 ## 4.4 Discussion
 
 ### 4.1.1 Petals
-From the 2 petal histograms it's clear visually that the Iris setosa genus differs in it's petal distibution in comparison to the versicolour and virginica variety's. Both plots  demonstate no crossover between the setosa distribution and other distributions and it is clear that separtion of the setosa varity based on petal measurements alone would be possible.
+From the 2 petal histograms it's clear that the Iris setosa genus differs in it's petal distibution in comparison to the versicolour and virginica variety's. Both plots  demonstate no crossover between the setosa distribution and other distributions and it is clear that separtion of the setosa varity based on petal measurements alone would be possible.
 
 Iris vericolour and Virginica do not separate clearly on petal distributions, although versicolour in both instances has the central value of it's distribution lower than virginica there is a great deal of cross over that would prevent identification of genus based on the obtained values.
 
@@ -110,26 +125,54 @@ The scatter plots give us a good visual, when we look at the data sets with peta
 ### 4.1.2 Sepals
 From the 2 Sepal histograms there is not the same level of clarity avaialable to separate the differing genus with all distribution overlaying. Of note here though is the normal distribution of the Iris setosa, the histogram is a lot smoother and the KDE plot unlike the petal charts is much more characteristic of a normal data distribution.
 
-A comparison of the mean values again shows that the setosa when compared to the others has the greatest difference in mean values (see sections 6.1.1, 6.1.2 & 6.1.3 of xxxx.txt).
+A comparison of the mean values again shows that the setosa when compared to the others has the greatest difference in mean values (see sections 6.1.1, 6.1.2 & 6.1.3 of analysis output.txt).
 
 The scatter plots for the sepal width v sepal length show that there is still clear dicernment between Setosa and the other species.
 
-## 4.1.3 T-test
+## 4.1.3 Overall 
+
+The box plots show that the Iris versicolour and Iris Virginica map similarly in that sepal and petal length  are longer than sepal and petal widths. This is unlike Iris setosa where the sepal width is greater than the petal length. This comparison of attributes alone would allow us to identify Iris setosa.
+
+The box plots also indicate (visually) that ratios of Iris versicolour and Iris Virginica attributes are very similar making separation on cominations of attributes difficult also. 
+
+The Iris setosa also shows a larger number of outliers on the petal length and width this agrees with observations made of the histograms. In particluar the petal width's 1st qualtile is also its median value.
+
+## 4.1.4 T-test
 A T-test was conducted on the measured attributes of iris versicolour and iris virginica
 
 Null Hypothesis H0 : Measured attribute has no affect on Species. That is to say that the difference between the observed attribute values for various Species are not statistically different.
 
 Alternate Hypothese Ha : Measured attribute has some affect on Species. That is to say that the difference between the observed attribute values for various Species are infact different from each other.
 
-The results in section 7 of xxxx.txt show that in each case with a p value set at 0.01 the null hypothesis is rejected from this we can infer that each attribute does signify a difference in species.
+The results in section 7 of analysis output.txt show that in each case with a p value set at 0.01 the null hypothesis is rejected from this we can infer that each attribute does signify a difference in species.
 
-## SVC examination (Kernel = linear , C =1.5)
+## 4.1.5 SVC examination (Kernel = linear , C =1.5, default data sampling)
 
-## 4.5 Conclusion
+The SVC examination yields a result in a range of accuracy 0.92 to 1.0 (average 0.96) when using the default training set of 25% of the data points.
+
+The confusion matrix confirms that the SVC algorithm is capable of identifying Iris Setosa with 100% accuracy from the test set.
+
+The confusion matrix confirms that the SVC machine learning method still has an error potential when discerning between Iris Versicolour and Iris Virginica although some runs can yeild an accuracy of 1. Recall of both these class of flower can on some occasions be perfect (recall value of 1) but this is not consistant with the model recording non perfect recall values for both classes virginica and versicolour. 
+
+Precision values obtained from the matrix again show the SVC algorithm although correct most of the time is not perfect at predicting the classification of Virginica and Versicolour.
+
+  # 4.1.5.1 Investigation with 10 runs with default train/test settings
+0.9736, 1.0, 0.9210, 0.9210, 1.0, 0.9473, 1.0, 0.9736, 0.9473, 0.9473
+Average = 0.9632 to 4 d.p
+
+  # 4.1.5.2 Investigation with 10 runs changing train settings.
+Further investigation into the effect of increasing the training set size (hand calculated) showed little improvement in accuracy with accuracys for 25,50,75 & 100 value train sets giving (average) accuracy values of 0.962, 0.976, 0.97 and 0.974 respectivly. Thus we can conclude that increasing the training set in this algorithm at best yeilds an increase in accuracy less than 0.02. During this data aquisition the test set was held constant at 25 samples.
+
+This demonstrates that the SVC algorithm is robust given its lack of change in accuracy over the increased number of test samples the implication is that the limits of it predictive capablility are met with a relativley low number training samples when used on this data set.
+
+The recall score for Iris setosa was always 1 throughout the investigation, this confirms that the Iris setosa is fully classifiable based on the provided data set.
+
+## 4.5 Conclusions
 Based on the data and the current analysis perfomed the following conclusions can be made.
   1. It is possible to discern the difference between Iris setosa and the other species using this data set.
-  2. It is not possible to discern the difference between Iris Versicolour and Iris Virginica fully using this data set. Although the t test tells us that there is a significant difference in attrubutes the utilised analysis techniques do not allow us to fully demonstrate this.
-  3. The Iris Setosa may not have been measured at the same point in it's growth cycle as the other two species based on its poor   conformance to a normal curve for it's petal length and in particular it's petal width. It's population skew toward the lower end of the range observed for petal width could potentially be an indication that these measurements were taken when the Setosa flower was still immature. 
+  2. It is not possible to discern the difference between Iris Versicolour and Iris Virginica fully using this data set. Although the T test tells us that there is a significant difference in attrubutes this is not sufficient to allow us to fully deicern between Virgininca and Versicolour.
+  3. The Iris Setosa may not have been measured at the same point in it's growth cycle as the other two species based on its poor   conformance to a normal curve for it's petal length and in particular it's petal width. It's population skew toward the lower end of the range observed for petal width could potentially be an indication that these measurements were taken when the Setosa flower was still immature.
+  4. Machine learning algorithm SVC produces good predictability without being able to fully resolve identification between Virginica and Versicolour. 
 
 # Appendix 1 information sources
 Markdown cheat sheet used (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
@@ -168,3 +211,4 @@ About SVC (https://pythonprogramming.net/linear-svc-example-scikit-learn-svm-pyt
 Plotting ML output (https://medium.com/swlh/visualizing-svm-with-python-4b4b238a7a92)
 SVM (https://www.svm-tutorial.com/2017/02/svms-overview-support-vector-machines/)
 SVM (https://www.svm-tutorial.com/2014/11/svm-understanding-math-part-1/)
+Confsuion matrix (https://www.geeksforgeeks.org/confusion-matrix-machine-learning/)
