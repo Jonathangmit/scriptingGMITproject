@@ -83,6 +83,9 @@ Training sample = 60
 Test sample = 90
 C value = 1.5
 
+## 24-28/04/20
+Analysis.py finalised and added along with final supporting documents
+
 # 4. Main project analysis and discussion
 
 ## 4.1 Introduction and Background
@@ -201,5 +204,5 @@ Based on the data and the current analysis perfomed the following conclusions ca
 33. About SVC (https://pythonprogramming.net/linear-svc-example-scikit-learn-svm-python/)
 34. Plotting ML output (https://medium.com/swlh/visualizing-svm-with-python-4b4b238a7a92)
 35. SVM (https://www.svm-tutorial.com/2017/02/svms-overview-support-vector-machines/)
-36.SVM (https://www.svm-tutorial.com/2014/11/svm-understanding-math-part-1/)
-37.Confsuion matrix (https://www.geeksforgeeks.org/confusion-matrix-machine-learning/)
+36. SVM (https://www.svm-tutorial.com/2014/11/svm-understanding-math-part-1/)
+37. Confsuion matrix (https://www.geeksforgeeks.org/confusion-matrix-machine-learning/)
