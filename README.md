@@ -1,19 +1,19 @@
 # scriptingGMITproject
-Project for GMIT programming and scripting
-All references will be placed at the in the Appendix.
+Project for GMIT programming and scripting.
+All references will be placed in the Appendix.
 
 # Contents
-1. Project plan - Basic outline for the plan
-2. Definitions - Explains some of the terms used.
-3. Programming diary - High level diary of programming activtys and some decisions.
+1. Project Plan - Basic outline for the plan
+2. Definitions - Explains some of the terms used
+3. Programming Diary - High level diary of programming activities and some decisions
 4. Analysis and discussion of primary project (Scatter, histograms, descriptive stats)
 
 # 1.Project plan
-* Other coursework (including computer arcitecture to be completed also + moodle exam)
-Wks 1-2 (18/03/20 - 01/04/20) reseaching and selecting the data set.  Working on the set to produce workable data for manipulation.*
-Week 3- 4 (02/04/20 - 15/04/20) 'Playing with the data' understanding how to produce outputs to other docs *
-Week 5 (16/04/20 - 22/04/20) Complete analysis.py
-Week 6 (22/04/20 - 29/04/20) Additional extra's if permittted.
+* Other coursework (including computer architecture to be completed also + moodle exam)
+1.Wks 1-2 (18/03/20 - 01/04/20) researching and selecting the data set.  Working on the set to produce workable data for manipulation
+2.Week 3- 4 (02/04/20 - 15/04/20) 'Playing with the data' understanding how to produce outputs to other docs
+3.Week 5 (16/04/20 - 22/04/20) Complete analysis.py
+4.Week 6 (22/04/20 - 29/04/20) Additional extras if permittted
 
 # 2.Definitions Used
 SEPAL is the single unit of the  protective layer around the bud of the flower which they collectively form the layer known as the calyx. They are typically green in colour. The primary function as stated is to protect the flower ,although it can in many cases also offer support to the budded flower. In additon the SEPAL can form a defence for the budded flowers seeds although many will simply wither or become non functioning to the plant.
