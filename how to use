@@ -1,1 +1,67 @@
 ## This is the how to use read me file
+The committed work to this GIT repository has been assembled solely by myself Jonathan Harper
+
+This how to use file explains the files within the repository.
+
+## README.md file – 
+This file contains the written document that supports and presents findings from analysis of the Iris data set
+analysis.py – the central file which contains the executable script.
+When executed the script will produce
+
+##output.txt – 
+This is an instantaneously produced readable text file containing data relevant to the write up . A second output file
+19.analysis output report is in the git hub repository, this was the file used to complete the written report in the read me file.
+
+It will will produce Plots (8 of, 4 x histogram, 1 x scatter, 3 x box) to support the analysis in the read me file.
+Also within the repository are a text file this is the output file produced by analysis.py and these results used to produce the report in the Readme
+
+Also within the repository are plots that have been edited to provide a better image than the original script will. These are
+
+1.Petal Length.png
+2.Petal Width.png
+3.Sepal Length.png
+4.Sepal Width.png
+5.scatterplot.png
+6.Iris setosa boxplot.png
+7.Iris Versicolour box plot.png
+8.Iris Virginica boxplot.png
+
+In addition there are 2 files used to calculate configurable parameters for the SVC algorithm used in analysis.py. These are
+
+## SVC investigation script.py
+
+When executed produces 3 graphical outputs for the accuracy value of the SVC model using a different number for the training samples.  
+It will also produce 2 csv files (datafile.csv & datafile2.csv). 
+The CSV files are used to write to and extract data from to produce the graphical output.
+Also within the repository are plots of this output that have been edited to provide a better image than the original script. 
+These are
+9.Investigation of SVC sample requirements (mean).png
+10. Investigation of SVC sample requirements (standard deviation).png
+11. Investigation of SVC sample requirements (variance).png
+
+## SVC investigation script2.py
+
+When executed produces 3 graphical outputs for the accuracy value of the SVC model using a different number for C. 
+It will also produce 2 csv files (datafileC.csv & datafileC2.csv). 
+The CSV files are used to write to and extract data from to produce the graphical output.
+Also within the repository are plots of this output that have been edited to provide a better image than the original script. 
+These are
+12.Investigation of SVC C value (mean)
+13. Investigation of SVC C value (standard deviation)
+14. Investigation of SVC C value (variance)
+Examples of the csv file outputs are also given
+15. datafilehis.csv
+16. datafile2his.csv
+17. datafileChis.csv
+18  datafileC2his.csv
+
+------------------------------------------------------------------------------
+All other files in the repository represent development of the final analysis.py script e.g anaysisconstruct and its iterations and 
+testing and its iterations. Other graphs included in the repository are graphs constructed to view different bin sizes and 
+with and without the kde curve for data clarity and aesthetic purposes.
+
+Hope you enjoy
+
+Kind regards
+
+Jonathan
