@@ -10,10 +10,10 @@ All references will be placed in the Appendix.
 
 # 1.Project plan
 * Other coursework (including computer architecture to be completed also + moodle exam)
-1.Wks 1-2 (18/03/20 - 01/04/20) researching and selecting the data set.  Working on the set to produce workable data for manipulation
-2.Week 3- 4 (02/04/20 - 15/04/20) 'Playing with the data' understanding how to produce outputs to other docs
-3.Week 5 (16/04/20 - 22/04/20) Complete analysis.py
-4.Week 6 (22/04/20 - 29/04/20) Additional extras if permittted
+ 1. Wks 1-2 (18/03/20 - 01/04/20) researching and selecting the data set.  Working on the set to produce workable data for manipulation
+ 2. Week 3- 4 (02/04/20 - 15/04/20) 'Playing with the data' understanding how to produce outputs to other docs
+ 3. Week 5 (16/04/20 - 22/04/20) Complete analysis.py
+ 4. Week 6 (22/04/20 - 29/04/20) Additional extras if permittted
 
 # 2.Definitions Used
 SEPAL is the single unit of the  protective layer around the bud of the flower which they collectively form the layer known as the calyx. They are typically green in colour. The primary function as stated is to protect the flower ,although it can in many cases also offer support to the budded flower. In additon the SEPAL can form a defence for the budded flowers seeds although many will simply wither or become non functioning to the plant.
